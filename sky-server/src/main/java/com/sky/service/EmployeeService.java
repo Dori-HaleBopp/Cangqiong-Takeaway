@@ -25,4 +25,6 @@ public interface EmployeeService {
     public void save(EmployeeDTO employeeDTO);
 
     PageResult pageQuery(EmployeePageQueryDTO employeePageQueryDTO);
+
+    void startOrStop(Integer status, Long id);
 }
